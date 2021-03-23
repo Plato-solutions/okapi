@@ -1,5 +1,6 @@
 #![feature(specialization)]
 #![forbid(missing_docs)]
+#![allow(incomplete_features)]
 
 //! This projects serves to enable automatic rendering of `openapi.json` files, and provides
 //! facilities to also serve the documentation alongside your api.

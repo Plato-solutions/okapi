@@ -51,7 +51,7 @@ impl<R: Responder<'static> + Clone + Send + Sync + 'static> ContentHandler<R> {
 impl<R: Responder<'static> + Clone + Send + Sync + 'static> Handler for ContentHandler<R> {
     fn handle<'r>(&self, req: &'r Request, data: Data) -> Outcome<'r> {
         // match e.g. "/index.html" but not "/index.html/"
-        if req.uri().path().ends_with('/') {
+        if req.uri().path().len() != 1 && req.uri().path().ends_with('/') {
             Outcome::Forward(data)
         } else {
             Outcome::from(req, self.content.clone())
