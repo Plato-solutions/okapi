@@ -2,7 +2,7 @@
 name = "rocket_okapi"
 description = "OpenAPI (AKA Swagger) document generation for Rocket applications"
 repository = "https://github.com/Plato-solutions/okapi"
-version = "0.8.0-rc.1"
+version = "0.8.0-rc.2"
 authors = ["Graham Esau <gesau@hotmail.co.uk>"]
 edition = "2018"
 license = "MIT"
@@ -14,7 +14,7 @@ categories = ["web-programming"]
 rocket = { git = "https://github.com/Plato-solutions/Rocket.git", branch="master", default-features = false, features = ["json"] }
 schemars = { version = "0.8" }
 okapi = { version = "0.7.0-rc.1", path = "../okapi" }
-rocket_okapi_codegen = { version = "=0.8.0-rc.1", path = "../rocket-okapi-codegen" }
+rocket_okapi_codegen = { version = "=0.8.0-rc.2", path = "../rocket-okapi-codegen" }
 serde = "1.0"
 serde_json = "1.0"
 log = "0.4"
